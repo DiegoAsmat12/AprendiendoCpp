@@ -3,8 +3,9 @@
 #include <vector>
 using namespace std; //Gracias a STD no es necesario usar std::cout o std::endl
 
-static void Saludo();
+/*static */void Saludo();
 string Nombre;
+int Factorial(int n);
 int main()
 {
     cin >> Nombre;
@@ -34,8 +35,22 @@ int main()
     }
     Saludo();
     cout << ValorEntero;
+    cout << endl;
+    cout << Factorial(5);
     return 0;
 }
 static void Saludo() {
     cout << "Hi! ";
 }
+int Factorial(int n) {
+    if (n == 0) {
+        return 1;
+    }
+    else if (n == 1) {
+        return 1;
+    }
+    else {
+        return n*Factorial(n - 1);
+    }
+}
+
