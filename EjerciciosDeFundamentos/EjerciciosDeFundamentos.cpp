@@ -37,8 +37,7 @@ int fibonacci(int n) {
 void NumerosPrimosHastaN(int n) {
     for (int j = 2; j < n; j++) {
         if (es_primo(j)) {
-            cout << j << " ";
+            cout << j<<" ";
         }
     }
-    
 }
